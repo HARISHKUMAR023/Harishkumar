@@ -1,3 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+.color-cha {
+  transition: 500ms;
+  animation: color-change 10s infinite;
+}
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes color-change {
+  0% {
+    color: #fa0d0d;
+  }
+  30% {
+    color: #0bfb0b;
+  }
+  60% {
+    color: #0aeefa;
+  }
+  100% {
+    color: #fa0bb2;
+  }
+}
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  line-height: 1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+.btn-primary {
+  background-color: #fb0909;
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #e60b0b;
+}
+
+.header {
+  padding: 1rem 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header--menu {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+}
+.header--menu__item > a {
+  margin-right: 2rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+.header--menu__item > a:hover {
+  color: #fb0909;
+}
+.header--menu__item > a.active {
+  color: #fb0909;
+}
 
 /*# sourceMappingURL=style.css.map */

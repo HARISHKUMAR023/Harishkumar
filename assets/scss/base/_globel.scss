@@ -1,0 +1,6 @@
+@use "../abstract/variable" as var;
+
+.color-cha{
+    transition: 500ms;
+    animation: color-change 10s infinite;
+}
