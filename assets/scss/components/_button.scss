@@ -8,14 +8,27 @@
     line-height: 1;
     font-size: 0.9rem;
     font-weight: 600;
+    cursor: pointer;
     border: none;
     outline: none;
     &-primary{
+        @extend .btn;
         background-color:funs.theme-color();
         color: white;
         &:hover{
             background-color:funs.theme-color("primary-hover");
         }
+    }
+    &-secon{
+
+    @extend .btn;
+    border: 2px solid funs.theme-color();
+    background-color: white;
+    color:funs.theme-color();
+    &:hover{
+        background-color:funs.theme-color("primary-hover");
+        color: white;
+    }
     }
  
 }

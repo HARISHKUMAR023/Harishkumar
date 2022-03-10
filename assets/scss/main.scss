@@ -4,13 +4,21 @@
 @import "./base/globel";
 @import "./base/reset";
 
-//utilites
-@import "./utilites/animation";
+
 
 //components
 @import "./components/button";
+@import "./components/bages";
 //layouts
 @import "./layouts/header";
+@import "./layouts/bacgound_eliments";
+//utilites
+@import "./utilites/animation";
+@import "./utilites/spacing";
+//pages
+@import "./pages/home";
+
+
 
 
 

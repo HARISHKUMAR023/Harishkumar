@@ -1,0 +1,24 @@
+.main-area{
+    padding: 8rem 20rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    &__contents{
+        max-width: 34rem;
+    }
+    &_img {
+        width: 700px;
+        height: 600px;
+    }
+    &__title{
+    font-size: 2.5rem;
+    line-height: 1.2;
+    
+    }
+    &__dec{
+        margin-top: 2rem;
+        line-height: 1.8;
+        font-size: 1.2rem;
+        color: gray;
+    }
+    }
