@@ -46,8 +46,14 @@ a {
   background-color: white;
   color: #fb0909;
 }
+.btn-secon a {
+  color: #fb0909;
+}
 .btn-secon:hover {
   background-color: #e60b0b;
+  color: white;
+}
+.btn-secon a:hover {
   color: white;
 }
 
@@ -891,6 +897,30 @@ a {
   line-height: 1.8;
   font-size: 1.2rem;
   color: gray;
+}
+
+.about-area {
+  padding: 8rem 20rem;
+  background-color: #fb0909;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 11rem;
+}
+.about-area--img {
+  width: 35rem;
+}
+.about-area--contents {
+  color: white;
+}
+.about-area--contents h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.about-area--contents p {
+  line-height: 2;
+  color: #edd9de;
+  font-size: 1.1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
