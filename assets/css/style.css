@@ -223,6 +223,34 @@ textarea {
   animation: box-shape linear 5s infinite;
 }
 
+footer {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #fb0909;
+  color: white;
+}
+footer p {
+  color: #c2c8ca;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  text-shadow: 2px 2px 10px black;
+}
+footer .social-icons > a > i {
+  transition: 500ms;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  color: #4d0909;
+}
+footer .social-icons > a > i:hover {
+  color: #c2c8ca;
+}
+footer .legel {
+  font-size: 0.9rem;
+}
+
 @keyframes color-change {
   0% {
     color: #fa0d0d;
