@@ -1,0 +1,42 @@
+.resume{
+background-color: red;
+height: 35rem;
+h2{
+    
+    padding-top: 3rem;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+    &-box{
+        
+
+        & a{
+            position: relative;
+            margin: 20px;
+            top: 200px;
+             left: 600px;
+           color:red;
+           font-weight: 600;
+          border-radius: 0.2rem;
+          padding: 10px 25px;
+          background-color: rgb(243, 240, 240);
+            &:hover{
+                background-color: #47ff13;
+                color: white;
+                -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(254,255,255,0.4); 
+                box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(254,255,255,0.4);
+            }
+         
+        }
+        &__img{
+            height: 120px;
+            width: 120px;
+            position: relative;
+            top: 110px;
+            left: 840px;
+        } 
+    }
+}

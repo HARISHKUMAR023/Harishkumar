@@ -25,17 +25,13 @@
     border: 2px solid funs.theme-color();
     background-color: white;
     color:funs.theme-color();
-   a{
-       color: funs.theme-color();
-   }
+  
     &:hover{
         background-color:funs.theme-color("primary-hover");
         color: white;
 
     }
-    a:hover{
-        color: white
-    }
+    
    
     }
  
