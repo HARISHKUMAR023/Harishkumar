@@ -1,34 +1,48 @@
-@use "../abstract/variable" as var;
-@use "../abstract/function" as funs;
+@use "../abstract/variable"as var;
+@use "../abstract/function"as funs;
+@use "../abstract/mixiens"as mixc;
 
 
-.header{
+.header {
     padding: 1rem 20rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-&--menu{
-        display:flex;
+    @include mixc.responsive(xs) {
+        //css
+        padding: 0.2rem 5rem;
+
+
+    }
+
+    &--menu {
+        display: flex;
         list-style: none;
         text-transform: uppercase;
-      &__item>a{
-         margin-right: 2rem; 
-         font-size: 14px;
-         font-weight: 600;
 
-         color: black;
-         
-       
-         &:hover{
-             color:funs.theme-color("primary");
-         }
-         &.active{
-            color:funs.theme-color("primary");
-         }
-      }
-      
-      
-      
+        @include mixc.responsive(xs) {
+            display: none;
+        }
+
+        &__item>a {
+            margin-right: 2rem;
+            font-size: 14px;
+            font-weight: 600;
+
+            color: black;
+
+
+            &:hover {
+                color: funs.theme-color("primary");
+            }
+
+            &.active {
+                color: funs.theme-color("primary");
+            }
+        }
+
+
+
     }
 }

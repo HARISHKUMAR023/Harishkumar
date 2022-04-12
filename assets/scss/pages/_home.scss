@@ -1,24 +1,45 @@
-.main-area{
+@use "../abstract/mixiens"as mixc;
+
+
+.main-area {
     padding: 8rem 20rem;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    &__contents{
+
+    @include mixc.responsive(xs) {
+        padding: 4rem 6rem;
+        flex-direction: column;
+    }
+
+    &__contents {
         max-width: 34rem;
     }
+
     &_img {
         width: 700px;
         height: 600px;
     }
-    &__title{
-    font-size: 2.5rem;
-    line-height: 1.2;
-    
+
+    &__title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+
+        @include mixc.responsive(xs) {
+            font-size: 1.5rem;
+        }
+
     }
-    &__dec{
+
+    &__dec {
         margin-top: 2rem;
         line-height: 1.8;
         font-size: 1.2rem;
         color: gray;
+
+        @include mixc.responsive(xs) {
+            font-size: 0.8rem;
+        }
+
     }
-    }
+}

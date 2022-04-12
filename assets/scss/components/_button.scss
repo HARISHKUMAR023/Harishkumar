@@ -1,8 +1,8 @@
-@use "../abstract/function" as funs;
-@use "../abstract/variable" as var;
+@use "../abstract/function"as funs;
+@use "../abstract/variable"as var;
+@use "../abstract/mixiens"as mixc;
 
-
-.btn{
+.btn {
     padding: 0.8rem 1.6rem;
     border-radius: 6px;
     line-height: 1;
@@ -11,28 +11,40 @@
     cursor: pointer;
     border: none;
     outline: none;
-    &-primary{
+
+    @include mixc.responsive(xs) {
+        margin-bottom: 15px;
+
+    }
+
+
+
+    &-primary {
         @extend .btn;
-        background-color:funs.theme-color();
+        background-color: funs.theme-color();
         color: white;
-        &:hover{
-            background-color:funs.theme-color("primary-hover");
+
+
+
+        &:hover {
+            background-color: funs.theme-color("primary-hover");
         }
     }
-    &-secon{
 
-    @extend .btn;
-    border: 2px solid funs.theme-color();
-    background-color: white;
-    color:funs.theme-color();
-  
-    &:hover{
-        background-color:funs.theme-color("primary-hover");
-        color: white;
+    &-secon {
+
+        @extend .btn;
+        border: 2px solid funs.theme-color();
+        background-color: white;
+        color: funs.theme-color();
+
+        &:hover {
+            background-color: funs.theme-color("primary-hover");
+            color: white;
+
+        }
+
 
     }
-    
-   
-    }
- 
+
 }
