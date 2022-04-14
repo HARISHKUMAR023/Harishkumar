@@ -11,10 +11,19 @@
 
     @include mixc.responsive(xs) {
         //css
-        padding: 0.2rem 5rem;
+        padding: 0.2rem 2rem;
 
+        h2 {
+            font-size: 1.3rem;
+        }
 
     }
+
+    .nave-taggle {
+        display: none;
+        font-size: 1.2rem;
+    }
+
 
     &--menu {
         display: flex;
@@ -23,6 +32,10 @@
 
         @include mixc.responsive(xs) {
             display: none;
+
+            span {
+                font-size: 0.2rem;
+            }
         }
 
         &__item>a {

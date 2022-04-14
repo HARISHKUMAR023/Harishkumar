@@ -94,7 +94,7 @@ a {
 @media (min-width: 1400px) {  
 
 }*/
-.btn, .btn-secon, .btn-primary {
+.btn, .btn-dounloed, .btn-secon, .btn-primary {
   padding: 0.8rem 1.6rem;
   border-radius: 6px;
   line-height: 1;
@@ -105,7 +105,7 @@ a {
   outline: none;
 }
 @media only screen and (max-width: 576px) {
-  .btn, .btn-secon, .btn-primary {
+  .btn, .btn-dounloed, .btn-secon, .btn-primary {
     margin-bottom: 15px;
   }
 }
@@ -124,6 +124,17 @@ a {
 .btn-secon:hover {
   background-color: #e60b0b;
   color: white;
+}
+.btn-dounloed {
+  border: 2px solid white;
+  background-color: #fb0909;
+  color: white;
+}
+.btn-dounloed:hover {
+  background-color: #47ff13;
+  color: white;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(254, 255, 255, 0.4);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(254, 255, 255, 0.4);
 }
 
 .badge {
@@ -185,8 +196,15 @@ textarea {
 }
 @media only screen and (max-width: 576px) {
   .header {
-    padding: 0.2rem 5rem;
+    padding: 0.2rem 2rem;
   }
+  .header h2 {
+    font-size: 1.3rem;
+  }
+}
+.header .nave-taggle {
+  display: none;
+  font-size: 1.2rem;
 }
 .header--menu {
   display: flex;
@@ -196,6 +214,9 @@ textarea {
 @media only screen and (max-width: 576px) {
   .header--menu {
     display: none;
+  }
+  .header--menu span {
+    font-size: 0.2rem;
   }
 }
 .header--menu__item > a {
@@ -1103,7 +1124,7 @@ footer .legel {
 }
 @media only screen and (max-width: 576px) {
   .main-area {
-    padding: 4rem 6rem;
+    padding: 4rem 2rem;
     flex-direction: column;
   }
 }
@@ -1204,11 +1225,44 @@ footer .legel {
   }
 }
 
+/*@media (max-width: 576px) {
+
+
+  }
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+
+  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {  
+
+}*/
 .roadmap {
   padding: 8rem 20rem;
 }
 .roadmap:hover h2 {
   color: #fb0909;
+}
+@media only screen and (max-width: 576px) {
+  .roadmap {
+    padding: 4rem 2rem;
+  }
 }
 .roadmap--heading {
   text-align: center;
@@ -1220,6 +1274,11 @@ footer .legel {
   align-items: center;
   margin-top: 3rem;
 }
+@media only screen and (max-width: 576px) {
+  .roadmap--items {
+    flex-direction: column;
+  }
+}
 .roadmap--item {
   transform: 500ms;
   position: relative;
@@ -1228,6 +1287,12 @@ footer .legel {
   max-width: 350px;
   cursor: pointer;
   filter: grayscale(100%);
+}
+@media only screen and (max-width: 576px) {
+  .roadmap--item {
+    padding-left: 1rem;
+    padding-bottom: 40px;
+  }
 }
 .roadmap--item:hover .roadmap--item__image::after {
   animation: rotate-infinite 4000ms linear infinite;
@@ -1277,6 +1342,13 @@ footer .legel {
   z-index: 1;
   line-height: 1;
 }
+@media only screen and (max-width: 576px) {
+  .roadmap--item:not(:last-child)::before {
+    content: "\f107";
+    top: 80%;
+    left: 32px;
+  }
+}
 .roadmap--item:hover {
   filter: grayscale(0);
 }
@@ -1288,9 +1360,42 @@ footer .legel {
   color: #fb0909;
 }
 
+/*@media (max-width: 576px) {
+
+
+  }
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+
+  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {  
+
+}*/
 .contact {
   padding: 8rem 20rem;
   background-color: #d1cece;
+}
+@media only screen and (max-width: 576px) {
+  .contact {
+    padding: 4rem 2rem;
+  }
 }
 .contact-card {
   display: flex;
@@ -1303,6 +1408,11 @@ footer .legel {
 .contact-card-header {
   flex-grow: 1;
 }
+@media only screen and (max-width: 576px) {
+  .contact-card {
+    flex-direction: column;
+  }
+}
 .contact img {
   width: 550px;
 }
@@ -1313,9 +1423,42 @@ footer .legel {
   color: gray;
 }
 
+/*@media (max-width: 576px) {
+
+
+  }
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+
+  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {  
+
+}*/
 .resume {
   background-color: red;
   height: 35rem;
+}
+@media only screen and (max-width: 576px) {
+  .resume {
+    padding: 4rem 2rem;
+  }
 }
 .resume h2 {
   padding-top: 3rem;
@@ -1325,22 +1468,87 @@ footer .legel {
   font-weight: 600;
   font-size: 3rem;
 }
-.resume-box a {
+@media only screen and (max-width: 576px) {
+  .resume h2 {
+    padding-top: 0.3rem;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+  }
+}
+.resume-box {
+  /*.btn1 {
+      @include mixc.responsive(xs) {
+          position: relative;
+
+
+
+          top: 70px;
+          left: 40px;
+
+
+      }
+  }*/
+  /*  .btn2 {
+      @include mixc.responsive(xs) {
+          position: relative;
+
+          padding-top: 10px;
+          top: 130px;
+          left: 90px;
+
+
+      }
+  }*/
+  /*&>a {
+
+      position: relative;
+      margin: 20px;
+      top: 200px;
+      left: 700px;
+      color: red;
+      font-weight: 600;
+      border-radius: 0.2rem;
+      padding: 10px 25px;
+      background-color: rgb(243, 240, 240);
+
+      @include mixc.responsive(xs) {}
+
+      &:hover {
+          background-color: #47ff13;
+          color: white;
+          -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(254, 255, 255, 0.4);
+          box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(254, 255, 255, 0.4);
+      }
+
+  }*/
+}
+.resume-box__btn {
+  display: flex;
   position: relative;
+  border: 10px;
   margin: 20px;
   top: 200px;
-  left: 600px;
-  color: red;
-  font-weight: 600;
-  border-radius: 0.2rem;
-  padding: 10px 25px;
-  background-color: #f3f0f0;
+  left: 750px;
+  padding-right: 20px;
 }
-.resume-box a:hover {
-  background-color: #47ff13;
-  color: white;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(254, 255, 255, 0.4);
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(254, 255, 255, 0.4);
+.resume-box__btn > a {
+  margin-right: 20px;
+}
+@media only screen and (max-width: 576px) {
+  .resume-box__btn > a {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .resume-box__btn {
+    flex-direction: column;
+    width: 160px;
+    top: 60px;
+    left: 70px;
+  }
+  .resume-box__btn i {
+    padding-right: 5px;
+  }
 }
 .resume-box__img {
   height: 120px;
@@ -1349,5 +1557,37 @@ footer .legel {
   top: 110px;
   left: 840px;
 }
+@media only screen and (max-width: 576px) {
+  .resume-box__img {
+    top: 20px;
+    left: 90px;
+  }
+}
+
+/*.btn {
+            position: relative;
+            margin: 20px;
+            top: 200px;
+            left: 700px;
+
+            @include mixc.responsive(xs) {
+                top: 60px;
+                left: 20px;
+            }
+
+            &:hover {
+                background-color: #47ff13;
+                color: white;
+                -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(254, 255, 255, 0.4);
+                box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(254, 255, 255, 0.4);
+            }
+        }
+
+        .btn2 {
+            @include mixc.responsive(xs) {
+                 top: 190px;
+                right: 70px;
+            }
+        }*/
 
 /*# sourceMappingURL=style.css.map */

@@ -8,8 +8,9 @@
     align-items: center;
 
     @include mixc.responsive(xs) {
-        padding: 4rem 6rem;
+        padding: 4rem 2rem;
         flex-direction: column;
+
     }
 
     &__contents {
