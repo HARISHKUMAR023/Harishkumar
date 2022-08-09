@@ -1,7 +1,9 @@
-@use "../abstract/mixiens"as mixc;
+@use "../abstract/mixiens" as mixc;
+@use "../abstract/variable" as var;
+@use "../abstract/function" as func;
 
 .resume {
-    background-color: red;
+    background-color: func.theme-color();
     height: 35rem;
 
     @include mixc.responsive(xs) {
