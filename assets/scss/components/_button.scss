@@ -1,6 +1,6 @@
-@use "../abstract/function"as funs;
-@use "../abstract/variable"as var;
-@use "../abstract/mixiens"as mixc;
+@use "../abstract/function" as funs;
+@use "../abstract/variable" as var;
+@use "../abstract/mixiens" as mixc;
 
 .btn {
     padding: 0.8rem 1.6rem;
@@ -14,7 +14,10 @@
 
     @include mixc.responsive(xs) {
         margin-bottom: 15px;
-
+        padding: 0.7rem 0.9rem;
+        font-size: 10px;
+        margin-top: 4px;
+        margin-right: 20px;
     }
 
 

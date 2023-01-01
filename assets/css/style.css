@@ -50,6 +50,10 @@
   height: auto;
 }
 
+.hidden {
+  display: none;
+}
+
 /*.text-animation{
 transition: 500ms;
 animation: ani 20s infinite 2s  direction fill-mode;
@@ -60,6 +64,7 @@ animation: ani 20s infinite 2s  direction fill-mode;
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -107,19 +112,23 @@ a {
 @media only screen and (max-width: 576px) {
   .btn, .btn-dounloed, .btn-secon, .btn-primary {
     margin-bottom: 15px;
+    padding: 0.7rem 0.9rem;
+    font-size: 10px;
+    margin-top: 4px;
+    margin-right: 20px;
   }
 }
 .btn-primary {
-  background-color: rgb(242, 5, 5);
+  background-color: rgb(247, 8, 8);
   color: white;
 }
 .btn-primary:hover {
   background-color: rgb(230, 11, 11);
 }
 .btn-secon {
-  border: 2px solid rgb(242, 5, 5);
+  border: 2px solid rgb(247, 8, 8);
   background-color: white;
-  color: rgb(242, 5, 5);
+  color: rgb(247, 8, 8);
 }
 .btn-secon:hover {
   background-color: rgb(230, 11, 11);
@@ -127,7 +136,7 @@ a {
 }
 .btn-dounloed {
   border: 2px solid white;
-  background-color: rgb(242, 5, 5);
+  background-color: rgb(247, 8, 8);
   color: white;
 }
 .btn-dounloed:hover {
@@ -141,7 +150,7 @@ a {
   padding: 0px 10px;
 }
 .badge__primary {
-  background-color: rgb(242, 5, 5);
+  background-color: rgb(247, 8, 8);
 }
 
 .form-control {
@@ -153,7 +162,7 @@ a {
   outline: none;
 }
 .form-control:focus {
-  border: 2px solid rgb(242, 5, 5);
+  border: 2px solid rgb(247, 8, 8);
 }
 
 textarea {
@@ -206,6 +215,11 @@ textarea {
   display: none;
   font-size: 1.2rem;
 }
+@media only screen and (max-width: 576px) {
+  .header .nave-taggle {
+    display: block;
+  }
+}
 .header--menu {
   display: flex;
   list-style: none;
@@ -214,6 +228,28 @@ textarea {
 @media only screen and (max-width: 576px) {
   .header--menu {
     display: none;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+    text-align: center;
+    z-index: 1;
+    transition: 500ms;
+  }
+  .header--menu.show {
+    display: block;
+    top: 50px;
+  }
+  .header--menu li {
+    padding: 2rem;
+  }
+  .header--menu li a {
+    color: white;
+  }
+  .header--menu li a.active {
+    color: rgb(10, 5, 11);
   }
   .header--menu span {
     font-size: 0.2rem;
@@ -226,10 +262,10 @@ textarea {
   color: black;
 }
 .header--menu__item > a:hover {
-  color: rgb(242, 5, 5);
+  color: rgb(247, 8, 8);
 }
 .header--menu__item > a.active {
-  color: rgb(242, 5, 5);
+  color: rgb(247, 8, 8);
 }
 
 /*@media (max-width: 576px) {
@@ -310,7 +346,7 @@ textarea {
   top: 90%;
   width: 8px;
   height: 8px;
-  background-color: rgb(242, 5, 5);
+  background-color: rgb(247, 8, 8);
   border-radius: 50%;
   z-index: -1;
   transform: rotate(360deg);
@@ -384,7 +420,7 @@ textarea {
 footer {
   padding: 2rem 0;
   text-align: center;
-  background-color: rgb(242, 5, 5);
+  background-color: rgb(247, 8, 8);
   color: white;
 }
 footer p {
@@ -1186,7 +1222,7 @@ footer .legel {
 }*/
 .about-area {
   padding: 8rem 20rem;
-  background-color: rgb(242, 5, 5);
+  background-color: rgb(247, 8, 8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1257,7 +1293,7 @@ footer .legel {
   padding: 8rem 20rem;
 }
 .roadmap:hover h2 {
-  color: rgb(242, 5, 5);
+  color: rgb(247, 8, 8);
 }
 @media only screen and (max-width: 576px) {
   .roadmap {
@@ -1315,7 +1351,7 @@ footer .legel {
   content: "";
   width: 100%;
   height: 100%;
-  border: 5px dotted rgb(242, 5, 5);
+  border: 5px dotted rgb(247, 8, 8);
 }
 .roadmap--item__contents {
   margin-top: 2rem;
@@ -1353,11 +1389,11 @@ footer .legel {
   filter: grayscale(0);
 }
 .roadmap:hover :not(:last-child)::before {
-  color: rgb(242, 5, 5);
+  color: rgb(247, 8, 8);
   right: -43%;
 }
 .roadmap:hover h3 {
-  color: rgb(242, 5, 5);
+  color: rgb(247, 8, 8);
 }
 
 /*@media (max-width: 576px) {
@@ -1452,7 +1488,7 @@ footer .legel {
 
 }*/
 .resume {
-  background-color: rgb(242, 5, 5);
+  background-color: rgb(247, 8, 8);
   height: 35rem;
 }
 @media only screen and (max-width: 576px) {

@@ -1,6 +1,6 @@
-@use "../abstract/variable"as var;
-@use "../abstract/function"as funs;
-@use "../abstract/mixiens"as mixc;
+@use "../abstract/variable" as var;
+@use "../abstract/function" as funs;
+@use "../abstract/mixiens" as mixc;
 
 
 .header {
@@ -22,6 +22,11 @@
     .nave-taggle {
         display: none;
         font-size: 1.2rem;
+
+        @include mixc.responsive(xs) {
+            display: block;
+        }
+
     }
 
 
@@ -31,11 +36,43 @@
         text-transform: uppercase;
 
         @include mixc.responsive(xs) {
+
             display: none;
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: funs.theme-color('menu-bg');
+            text-align: center;
+            z-index: 1;
+            transition: 500ms;
+
+
+            &.show {
+                display: block;
+                top: 50px;
+            }
+
+            & li {
+                padding: 2rem;
+
+                a {
+                    color: white;
+
+                    &.active {
+                        color: rgb(10, 5, 11);
+                    }
+
+
+                }
+            }
 
             span {
                 font-size: 0.2rem;
             }
+
+
         }
 
         &__item>a {
