@@ -50,10 +50,6 @@
   height: auto;
 }
 
-.hidden {
-  display: none;
-}
-
 /*.text-animation{
 transition: 500ms;
 animation: ani 20s infinite 2s  direction fill-mode;

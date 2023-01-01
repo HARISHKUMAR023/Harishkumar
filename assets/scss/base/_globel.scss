@@ -1,5 +1,5 @@
 @use "../abstract/variable" as var;
-// @use "../abstract/function" as func;
+@use "../abstract/function" as func;
 
 
 .color-cha {
@@ -27,9 +27,9 @@
     height: auto;
 }
 
-.hidden {
-    display: none;
-}
+// .hidden {
+//     display: none;
+// }
 
 /*.text-animation{
 transition: 500ms;

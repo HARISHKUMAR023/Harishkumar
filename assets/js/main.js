@@ -11,7 +11,7 @@ navbtn.addEventListener("click", () => {
     let headermenu = document.querySelector('ul.header--menu');
     const navicon = document.querySelectorAll(".navicon");
     headermenu.classList.toggle('show')
-    navicon.forEach(icon => {
-        icon.classList.toggle("hidden");
-    })
+    // navicon.forEach(icon => {
+    //     icon.classList.toggle("hidden");
+    // })
 })
