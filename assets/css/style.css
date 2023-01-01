@@ -37,8 +37,8 @@
 }
 
 .line {
-  background: #f60718;
-  background: linear-gradient(105deg, #f60718 26%, #cd19b1 100%);
+  background: rgb(246, 7, 24);
+  background: linear-gradient(105deg, rgb(246, 7, 24) 26%, rgb(205, 25, 177) 100%);
   width: 5rem;
   height: 0.5rem;
   border-radius: 6px;
@@ -110,24 +110,24 @@ a {
   }
 }
 .btn-primary {
-  background-color: #f20505;
+  background-color: rgb(242, 5, 5);
   color: white;
 }
 .btn-primary:hover {
-  background-color: #e60b0b;
+  background-color: rgb(230, 11, 11);
 }
 .btn-secon {
-  border: 2px solid #f20505;
+  border: 2px solid rgb(242, 5, 5);
   background-color: white;
-  color: #f20505;
+  color: rgb(242, 5, 5);
 }
 .btn-secon:hover {
-  background-color: #e60b0b;
+  background-color: rgb(230, 11, 11);
   color: white;
 }
 .btn-dounloed {
   border: 2px solid white;
-  background-color: #f20505;
+  background-color: rgb(242, 5, 5);
   color: white;
 }
 .btn-dounloed:hover {
@@ -141,19 +141,19 @@ a {
   padding: 0px 10px;
 }
 .badge__primary {
-  background-color: #f20505;
+  background-color: rgb(242, 5, 5);
 }
 
 .form-control {
   padding: 0.8rem 1.5rem;
   width: 100%;
-  background-color: #e9e7e7;
+  background-color: rgb(233, 231, 231);
   border: none;
   border-radius: 5px;
   outline: none;
 }
 .form-control:focus {
-  border: 2px solid #f20505;
+  border: 2px solid rgb(242, 5, 5);
 }
 
 textarea {
@@ -226,10 +226,10 @@ textarea {
   color: black;
 }
 .header--menu__item > a:hover {
-  color: #f20505;
+  color: rgb(242, 5, 5);
 }
 .header--menu__item > a.active {
-  color: #f20505;
+  color: rgb(242, 5, 5);
 }
 
 /*@media (max-width: 576px) {
@@ -310,7 +310,7 @@ textarea {
   top: 90%;
   width: 8px;
   height: 8px;
-  background-color: #f20505;
+  background-color: rgb(242, 5, 5);
   border-radius: 50%;
   z-index: -1;
   transform: rotate(360deg);
@@ -322,7 +322,7 @@ textarea {
   top: 90%;
   width: 8px;
   height: 8px;
-  background-color: #f309b9;
+  background-color: rgb(243, 9, 185);
   border-radius: 50%;
   z-index: -1;
   transform: rotate(360deg);
@@ -384,7 +384,7 @@ textarea {
 footer {
   padding: 2rem 0;
   text-align: center;
-  background-color: #f20505;
+  background-color: rgb(242, 5, 5);
   color: white;
 }
 footer p {
@@ -411,25 +411,25 @@ footer .legel {
 
 @keyframes color-change {
   0% {
-    color: #fa0d0d;
+    color: rgb(250, 13, 13);
   }
   10% {
-    color: #0bfb0b;
+    color: rgb(11, 251, 11);
   }
   30% {
-    color: #0aeefa;
+    color: rgb(10, 238, 250);
   }
   60% {
-    color: #fa0bb2;
+    color: rgb(250, 11, 178);
   }
   70% {
-    color: #09f3a9;
+    color: rgb(9, 243, 169);
   }
   80% {
-    color: #eaee09;
+    color: rgb(234, 238, 9);
   }
   100% {
-    color: #270bfa;
+    color: rgb(39, 11, 250);
   }
 }
 @keyframes box-shape {
@@ -1186,7 +1186,7 @@ footer .legel {
 }*/
 .about-area {
   padding: 8rem 20rem;
-  background-color: #f20505;
+  background-color: rgb(242, 5, 5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1257,7 +1257,7 @@ footer .legel {
   padding: 8rem 20rem;
 }
 .roadmap:hover h2 {
-  color: #f20505;
+  color: rgb(242, 5, 5);
 }
 @media only screen and (max-width: 576px) {
   .roadmap {
@@ -1315,7 +1315,7 @@ footer .legel {
   content: "";
   width: 100%;
   height: 100%;
-  border: 5px dotted #f20505;
+  border: 5px dotted rgb(242, 5, 5);
 }
 .roadmap--item__contents {
   margin-top: 2rem;
@@ -1353,11 +1353,11 @@ footer .legel {
   filter: grayscale(0);
 }
 .roadmap:hover :not(:last-child)::before {
-  color: #f20505;
+  color: rgb(242, 5, 5);
   right: -43%;
 }
 .roadmap:hover h3 {
-  color: #f20505;
+  color: rgb(242, 5, 5);
 }
 
 /*@media (max-width: 576px) {
@@ -1390,7 +1390,7 @@ footer .legel {
 }*/
 .contact {
   padding: 8rem 20rem;
-  background-color: #d1cece;
+  background-color: rgb(209, 206, 206);
 }
 @media only screen and (max-width: 576px) {
   .contact {
@@ -1452,12 +1452,12 @@ footer .legel {
 
 }*/
 .resume {
-  background-color: #f20505;
+  background-color: rgb(242, 5, 5);
   height: 35rem;
 }
 @media only screen and (max-width: 576px) {
   .resume {
-    padding: 4rem 2rem;
+    padding: 3rem 0rem;
   }
 }
 .resume h2 {
@@ -1465,8 +1465,8 @@ footer .legel {
   position: relative;
   text-align: center;
   color: white;
-  font-weight: 600;
-  font-size: 3rem;
+  font-weight: 500;
+  font-size: 2rem;
 }
 @media only screen and (max-width: 576px) {
   .resume h2 {
@@ -1475,119 +1475,47 @@ footer .legel {
     padding-bottom: 0.5rem;
   }
 }
+
 .resume-box {
-  /*.btn1 {
-      @include mixc.responsive(xs) {
-          position: relative;
-
-
-
-          top: 70px;
-          left: 40px;
-
-
-      }
-  }*/
-  /*  .btn2 {
-      @include mixc.responsive(xs) {
-          position: relative;
-
-          padding-top: 10px;
-          top: 130px;
-          left: 90px;
-
-
-      }
-  }*/
-  /*&>a {
-
-      position: relative;
-      margin: 20px;
-      top: 200px;
-      left: 700px;
-      color: red;
-      font-weight: 600;
-      border-radius: 0.2rem;
-      padding: 10px 25px;
-      background-color: rgb(243, 240, 240);
-
-      @include mixc.responsive(xs) {}
-
-      &:hover {
-          background-color: #47ff13;
-          color: white;
-          -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(254, 255, 255, 0.4);
-          box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(254, 255, 255, 0.4);
-      }
-
-  }*/
+  font-family: arial;
+  font-size: 24px;
+  margin: 25px 550px;
+  width: 300px;
+  height: 300px;
 }
 .resume-box__btn {
-  display: flex;
-  position: relative;
-  border: 10px;
-  margin: 20px;
-  top: 200px;
-  left: 750px;
-  padding-right: 20px;
-}
-.resume-box__btn > a {
-  margin-right: 20px;
+  text-align: center;
+  padding-top: 1rem;
 }
 @media only screen and (max-width: 576px) {
-  .resume-box__btn > a {
-    margin-right: 0;
+  .resume-box {
+    margin: 0;
+    padding-top: 2rem;
   }
-}
-@media only screen and (max-width: 576px) {
   .resume-box__btn {
-    flex-direction: column;
-    width: 160px;
-    top: 60px;
-    left: 70px;
-  }
-  .resume-box__btn i {
-    padding-right: 5px;
+    text-align: center;
+    size: 10px;
+    padding-top: 1rem;
   }
 }
-.resume-box__img {
-  height: 120px;
-  width: 120px;
-  position: relative;
-  top: 110px;
-  left: 840px;
-}
-@media only screen and (max-width: 576px) {
-  .resume-box__img {
-    top: 20px;
-    left: 90px;
+@media only screen and (min-width: 576px) {
+  .resume-box {
+    margin: 0;
+    margin-right: 30px;
+    padding-top: 2rem;
+  }
+  .resume-box__btn {
+    text-align: center;
+    size: 10px;
+    padding-top: 1rem;
   }
 }
 
-/*.btn {
-            position: relative;
-            margin: 20px;
-            top: 200px;
-            left: 700px;
-
-            @include mixc.responsive(xs) {
-                top: 60px;
-                left: 20px;
-            }
-
-            &:hover {
-                background-color: #47ff13;
-                color: white;
-                -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(254, 255, 255, 0.4);
-                box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(254, 255, 255, 0.4);
-            }
-        }
-
-        .btn2 {
-            @include mixc.responsive(xs) {
-                 top: 190px;
-                right: 70px;
-            }
-        }*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 /*# sourceMappingURL=style.css.map */
