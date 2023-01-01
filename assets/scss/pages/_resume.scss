@@ -11,7 +11,7 @@
 
 
     @include mixc.responsive(xs) {
-        padding: 3rem 0rem;
+        padding: 4rem 0rem;
 
 
     }
@@ -26,6 +26,7 @@
         font-size: 2rem;
 
         @include mixc.responsive(xs) {
+            margin: 0;
             padding-top: 0.3rem;
             font-size: 1rem;
             padding-bottom: 0.5rem;
@@ -55,18 +56,6 @@
 
     @include mixc.responsive(xs) {
         margin: 0;
-        padding-top: 2rem;
-
-        &__btn {
-            text-align: center;
-            size: 10px;
-            padding-top: 1rem;
-        }
-    }
-
-    @include mixc.responsive(sm) {
-        margin: 0;
-        margin-right: 30px;
         padding-top: 2rem;
 
         &__btn {

@@ -1457,7 +1457,7 @@ footer .legel {
 }
 @media only screen and (max-width: 576px) {
   .resume {
-    padding: 3rem 0rem;
+    padding: 4rem 0rem;
   }
 }
 .resume h2 {
@@ -1470,6 +1470,7 @@ footer .legel {
 }
 @media only screen and (max-width: 576px) {
   .resume h2 {
+    margin: 0;
     padding-top: 0.3rem;
     font-size: 1rem;
     padding-bottom: 0.5rem;
@@ -1490,18 +1491,6 @@ footer .legel {
 @media only screen and (max-width: 576px) {
   .resume-box {
     margin: 0;
-    padding-top: 2rem;
-  }
-  .resume-box__btn {
-    text-align: center;
-    size: 10px;
-    padding-top: 1rem;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .resume-box {
-    margin: 0;
-    margin-right: 30px;
     padding-top: 2rem;
   }
   .resume-box__btn {
